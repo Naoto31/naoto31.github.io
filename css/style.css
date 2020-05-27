@@ -64,11 +64,70 @@ nav {
     margin: auto;
 }
 
+.profile {
+    padding-bottom: 80px;
+}
+
 /* Testimonial */
-.testimonial img {
-    background-size: cover;
+
+#testimonial-container {
+    text-align: center;
     background-attachment: fixed;
-    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../img/profile_1.png);
+}
+
+.testimonial-cards {
+    position: relative;
+    top: -60px;
+
+}
+
+.testimonial-1 {
+    position: absolute;
+    top: 0px;
+    left: 140px;
+    max-width: 340px;
+    padding: 40px 30px 40px 30px;
+    vertical-align: top;
+    background-color:  rgb(255, 255,255, 0.9);
+    border-radius: 6px;
+    box-shadow: 0px 35px 35px 0px rgba(0, 0, 0, 0.12);
+}
+
+.testimonial-2 {
+
+    position: absolute;
+    top: 200px;
+    right: 200px;
+    max-width: 340px;
+    padding: 40px 30px 40px 30px;
+    vertical-align: top;
+    background-color: rgb(255, 255,255, 0.9);
+    border-radius: 6px;
+    box-shadow: 0px 35px 35px 0px rgba(0, 0, 0, 0.12);
+}
+
+.testimonial-3 {
+    position: absolute;
+    top: 450px;
+    left: 140px;
+    max-width: 340px;
+    padding: 40px 30px 40px 30px;
+    vertical-align: top;
+    background-color:  rgb(255, 255,255, 0.9);
+    border-radius: 6px;
+    box-shadow: 0px 35px 35px 0px rgba(0, 0, 0, 0.12);
+}
+
+.testimonial-avatar {
+    width: 35%;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    text-align: center;
+
 }
 
 #projects {

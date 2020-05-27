@@ -64,6 +64,13 @@ nav {
     margin: auto;
 }
 
+/* Testimonial */
+.testimonial img {
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+}
+
 #projects {
     background-color: #d4f3ef;
 }

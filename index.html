@@ -58,12 +58,12 @@
     <div class="container pt-4 pb-4">
         <!-- Profile -->
         <div class="profile fade-in">
-            <h1 id="profile" class="display-4 text-center my-5 text-muted">Profile</h1>
-            <p class="text-center"><q>I solemnly swear that I am up to no good.</q></p>
+            <h1 id="profile" class="display-4 text-center my-5 text-muted">Greetings from Munich!</h1>
+            <p class="text-center"><q>Life is an adventure.</q></p>
             <hr class="my-4">
             <div class="row">
                 <div class="col-lg-6">
-                    <h3 class="mb-4">Greetings from Munich!</h3>
+                    <h3 class="mb-4"></h3>
                     <img class="mb-4 img-fluid rounded d-block" src="img/2.png" alt="Portland">
                 </div>
                 <div class="col-lg">
@@ -85,8 +85,8 @@
     </div>
     <!-- /Profile -->
 
-     <!-- Testimonial -->
-     <div id="testimonial-container">
+    <!-- Testimonial -->
+    <div id="testimonial-container">
         <div class="testimonial-cards">
             <div class="testimonial-1">
                 <img class="testimonial-avatar" src="img/testimonial_kate.jpeg">
@@ -112,8 +112,8 @@
     <!-- /Testimonial -->
 
     <!-- Abilities -->
-    <div id="abilities" class="container pt-4 pb-4">
-        <h1 class="display-4 text-center my-5 text-muted">Abilities</h1>
+    <div id="abilities" class="container pt-4">
+        <h1 class="display-4 text-center my-5 text-muted">What are my abilities?</h1>
 
         <!-- Skills -->
         <h3 class="text-center pt-4 pb-4">Skills</h3>
@@ -157,7 +157,16 @@
                         </span>
                     </li>
                     <li class="ability">
-                        <span>Wordpress</span>
+                        <span>python</span>
+                        <span class="progress">
+                            <div class="progress-bar progress-bar-striped bg-success progress-bar-animated"
+                                role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+                                style="width: 90%"></div>
+
+                        </span>
+                    </li>
+                    <li class="ability">
+                        <span>Data Analytics</span>
                         <span class="progress">
                             <div class="progress-bar progress-bar-striped bg-success progress-bar-animated"
                                 role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
@@ -175,6 +184,15 @@
                             <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated"
                                 role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
                                 style="width: 65%"></div>
+
+                        </span>
+                    </li>
+                    <li class="ability">
+                        <span>Data Analysis</span>
+                        <span class="progress">
+                            <div class="progress-bar progress-bar-striped bg-success progress-bar-animated"
+                                role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+                                style="width: 90%"></div>
 
                         </span>
                     </li>
@@ -228,7 +246,14 @@
         <!-- /Languages -->
 
         <!-- Potential -->
-        <h3 class="text-center pt-4 pb-4">Potential</h3>
+        <div id="potential" class="col-md-12">
+            <h3 class="text-center pt-4 pb-4">Potential & Passion</h3>
+            <span class="progress potential-progress">
+                <div class="progress-bar progress-bar-striped bg-danger progress-bar-animated" role="progressbar"
+                    aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
+
+            </span>
+        </div>
 
         <!-- /Potential -->
     </div>
@@ -237,93 +262,87 @@
 
     <!-- Project -->
     <div id="projects" class="container-fluid pt-4">
-        <h1 class="display-4 text-center my-5 text-muted">Projects</h1>
+        <h1 class="display-4 text-center my-5 text-muted">It's time to see some projects!</h1>
         <div class="container">
             <div class="row">
-                <div class="col-md-6 col-lg-4">
-                    <div class="card mb-3">
-
-                        <div class="card bg-light">
-                            <img src="img/project_1.png" class="card-img-top card-header bg-light" alt="Vivianne">
-                            <div class="card-body">
-                                <h5 class="card-title">saisai.life</h5>
-                                <p class="card-text">Vivianne is a web developer and teacher who is passionate about
-                                    building
-                                    scalable,
-                                    data-driven web apps, especially ones!</p>
-                                <a href="https://saisai.life/" class="btn btn-info" target="_blank">Live View</a>
-                            </div>
+                
+                <div class="col-md-6 col-lg-4 project-card">
+                    <div class="hovereffect">
+                        <img src="img/project_1.png" class="img-responsive" alt="...">
+                        <div class="overlay">
+                            <h2>saisai.life</h2>
+                            <p>
+                                <a href="#">Live View</a>
+                            </p>
+                            <p>
+                                Personal Project with my wife.
+                            </p>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-md-6 col-lg-4">
-                    <div class="card bg-light mb-3">
-                        <img src="img/project_2.png" class="card-img-top card-header bg-light" alt="NodeStradamus">
-                        <div class="card-body">
-                            <h4 class="card-title">Responsive Layout</h5>
-                                <p class="card-text">Designing web pages that look and function well on multiple
-                                    screen
-                                    sizes is an essential skill for a web developer.</p>
-                                <a href="https://naoto31.github.io/techdegree-project--2/" class="btn btn-info"
-                                    target="_blank">Live View</a>
+                <div class="col-md-6 col-lg-4 project-card">
+                    <div class="hovereffect">
+                        <img src="img/project_2.png" class="img-responsive" alt="...">
+                        <div class="overlay">
+                            <h2>saisai.life</h2>
+                            <p>
+                                <a href="#">Live View</a>
+                            </p>
+                            <p>
+                                Personal Project with my wife.
+                            </p>
                         </div>
                     </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4">
-                    <div class="card bg-light mb-3">
-                        <img src="img/project_3.png" class="card-img-top card-header bg-light" alt="NodeStradamus">
-                        <div class="card-body">
-                            <h4 class="card-title">An Interactive Photo Gallery</h4>
-                            <p class="card-text">Use HTML, CSS and the popular programming language JavaScript to
-                                create
-                                an interactive, searchable gallery of photos.</p>
-                            <a href="https://naoto31.github.io/techdegree-project-5/" class="btn btn-info"
-                                target="_blank">Live View</a>
+                </div>  <div class="col-md-6 col-lg-4 project-card">
+                    <div class="hovereffect">
+                        <img src="img/project_3.png" class="img-responsive" alt="...">
+                        <div class="overlay">
+                            <h2>saisai.life</h2>
+                            <p>
+                                <a href="#">Live View</a>
+                            </p>
+                            <p>
+                                Personal Project with my wife.
+                            </p>
                         </div>
                     </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4">
-                    <div class="card bg-light mb-3">
-                        <img src="img/project_4.png" class="card-img-top card-header bg-light" alt="NodeStradamus">
-                        <div class="card-body">
-                            <h4 class="card-title">Game Show App</h4>
-
-                            <p class="card-text">In this project, you'll create a browser version of “Wheel of
-                                Success”,
-                                a word guessing game.</p>
-                            <a href="https://naoto31.github.io/techdegree-project-6/" class="btn btn-info"
-                                target="_blank">Live View</a>
+                </div>  <div class="col-md-6 col-lg-4 project-card">
+                    <div class="hovereffect">
+                        <img src="img/project_4.png" class="img-responsive" alt="...">
+                        <div class="overlay">
+                            <h2>saisai.life</h2>
+                            <p>
+                                <a href="#">Live View</a>
+                            </p>
+                            <p>
+                                Personal Project with my wife.
+                            </p>
                         </div>
                     </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4">
-                    <div class="card bg-light mb-3">
-                        <img src="img/project_5.png" class="card-img-top card-header bg-light" alt="NodeStradamus">
-                        <div class="card-body">
-                            <h4 class="card-title">WebApp Dashboard</h4>
-                            <p class="card-text">Build an interactive dashboard for a web application using advanced
-                                web
-                                techniques including SVG graphics and JavaScript programming.</p>
-                            <a href="https://naoto31.github.io/techdegree-project-7/" class="btn btn-info"
-                                target="_blank">Live View</a>
+                </div>  <div class="col-md-6 col-lg-4 project-card">
+                    <div class="hovereffect">
+                        <img src="img/project_5.png" class="img-responsive" alt="...">
+                        <div class="overlay">
+                            <h2>saisai.life</h2>
+                            <p>
+                                <a href="#">Live View</a>
+                            </p>
+                            <p>
+                                Personal Project with my wife.
+                            </p>
                         </div>
                     </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4">
-                    <div class="card bg-light mb-3">
-                        <img src="img/project_6.png" class="card-img-top card-header bg-light" alt="NodeStradamus">
-                        <div class="card-body">
-                            <h4 class="card-title">Employee Directory</h4>
-                            <p class="card-text">Using JavaScript, you’ll create an employee directory by
-                                communicating
-                                with a third-party API.</p>
-                            <a href="https://naoto31.github.io/techdegree-project-8/" class="btn btn-info"
-                                target="_blank">Live View</a>
+                </div>  <div class="col-md-6 col-lg-4 project-card">
+                    <div class="hovereffect">
+                        <img src="img/project_6.png" class="img-responsive" alt="...">
+                        <div class="overlay">
+                            <h2>saisai.life</h2>
+                            <p>
+                                <a href="#">Live View</a>
+                            </p>
+                            <p>
+                                Personal Project with my wife.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -333,7 +352,7 @@
 
     <!-- Contact -->
     <div id="contact" class="container-fluid alert-dark pt-4 pb-4">
-        <h1 class="display-4 text-center mt-5 text-muted">Contact</h1>
+        <h1 class="display-4 text-center mt-5 text-muted">Work Together?</h1>
         <div class="container">
 
             <div class="col-md-12">
@@ -409,6 +428,7 @@
         </script>
         <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
         <script src="particles.js"></script>
+        <script src="index.js"></script>
 </body>
 
 </html>

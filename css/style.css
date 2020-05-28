@@ -76,7 +76,8 @@ nav {
     min-height: 100vh;
     background-size: cover;
     background-position: center;
-    background-image: url(../img/profile_1.png);
+    background-image: url(../img/testimonial_bg.png);
+    /* Image by <a href="https://pixabay.com/users/272447-272447/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1132964">272447</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1132964">Pixabay</a> */
 }
 
 .testimonial-cards {
@@ -92,7 +93,7 @@ nav {
     max-width: 340px;
     padding: 40px 30px 40px 30px;
     vertical-align: top;
-    background-color:  rgb(255, 255,255, 0.9);
+    background-color: rgb(255, 255, 255, 0.9);
     border-radius: 6px;
     box-shadow: 0px 35px 35px 0px rgba(0, 0, 0, 0.12);
 }
@@ -105,7 +106,7 @@ nav {
     max-width: 340px;
     padding: 40px 30px 40px 30px;
     vertical-align: top;
-    background-color: rgb(255, 255,255, 0.9);
+    background-color: rgb(255, 255, 255, 0.9);
     border-radius: 6px;
     box-shadow: 0px 35px 35px 0px rgba(0, 0, 0, 0.12);
 }
@@ -117,7 +118,7 @@ nav {
     max-width: 340px;
     padding: 40px 30px 40px 30px;
     vertical-align: top;
-    background-color:  rgb(255, 255,255, 0.9);
+    background-color: rgb(255, 255, 255, 0.9);
     border-radius: 6px;
     box-shadow: 0px 35px 35px 0px rgba(0, 0, 0, 0.12);
 }
@@ -179,7 +180,7 @@ ul {
     padding: 15px;
     background-color: transparent;
 
-    
+
 }
 
 /* .card-img-overlay {
@@ -202,24 +203,24 @@ ul {
     cursor: default;
     background: #0a97b0;
     box-shadow:
-  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-  0 12.5px 10px rgba(0, 0, 0, 0.06),
-  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
-  /* 0 41.8px 33.4px rgba(0, 0, 0, 0.086), */
-  0 100px 80px rgba(0, 0, 0, 0.12)
-  }
-  
-  .hovereffect .overlay {
+        0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+        0 12.5px 10px rgba(0, 0, 0, 0.06),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+        /* 0 41.8px 33.4px rgba(0, 0, 0, 0.086), */
+        0 100px 80px rgba(0, 0, 0, 0.12)
+}
+
+.hovereffect .overlay {
     width: 100%;
     position: absolute;
     overflow: hidden;
     top: 0;
     left: 0;
     padding: 50px 20px;
-  }
-  
-  .hovereffect img {
+}
+
+.hovereffect img {
     display: block;
     position: relative;
     width: 100%;
@@ -230,16 +231,16 @@ ul {
     transform: translate3d(-10px,0,0);*/
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-  }
-  
-  .hovereffect:hover img {
+}
+
+.hovereffect:hover img {
     opacity: 0.4;
     filter: alpha(opacity=40);
-    -webkit-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
-  }
-  
-  .hovereffect h2 {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.hovereffect h2 {
     color: #fff;
     text-align: center;
     position: relative;
@@ -249,20 +250,20 @@ ul {
     -webkit-transition: -webkit-transform 0.35s;
     transition: transform 0.35s;
     background-color: transparent;
-    -webkit-transform: translate3d(-100%,0,0);
-    transform: translate3d(-100%,0,0);
-    
-  }
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
 
-  .hovereffect:hover h2 {
+}
+
+.hovereffect:hover h2 {
     opacity: 1;
     filter: alpha(opacity=100);
-    -webkit-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
-  }
-  
-  /* Line Under the title */
-  .hovereffect h2:after {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+/* Line Under the title */
+.hovereffect h2:after {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -272,31 +273,33 @@ ul {
     content: '';
     -webkit-transition: -webkit-transform 0.35s;
     transition: transform 0.35s;
-    -webkit-transform: translate3d(-100%,0,0);
-    transform: translate3d(-100%,0,0);
-  }
-  
-  .hovereffect:hover h2:after {
-    -webkit-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
-  }
-  
-  .hovereffect a, .hovereffect p {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+}
+
+.hovereffect:hover h2:after {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.hovereffect a,
+.hovereffect p {
     color: #FFF;
     opacity: 0;
     filter: alpha(opacity=0);
     -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
     transition: opacity 0.35s, transform 0.35s;
-    -webkit-transform: translate3d(100%,0,0);
-    transform: translate3d(100%,0,0);
-  }
-  
-  .hovereffect:hover a, .hovereffect:hover p {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+}
+
+.hovereffect:hover a,
+.hovereffect:hover p {
     opacity: 1;
     filter: alpha(opacity=100);
-    -webkit-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
-  }
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
 
 #contact h1 {
     margin-bottom: 0px;

@@ -171,8 +171,14 @@ ul {
     margin-bottom: 0.5rem;
 }
 
+/* Project Section */
+
 #projects {
     padding-bottom: 50px;
+}
+
+#projects h2 {
+    font-weight: bold;
 }
 
 .project-card {

@@ -23,7 +23,7 @@
 <body id="home" data-spy="scroll" data-target=".navbar" data-offset="100">
     <!-- nav bar -->
 
-    <!-- <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">/
             <a class="navbar-brand order-1 mr-0" href="#">Sai's Resume</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
@@ -42,7 +42,7 @@
                 </div>
             </div>
         </div>
-    </nav> -->
+    </nav>
     <!-- /nav bar -->
 
     <!-- Particles -->
@@ -90,20 +90,20 @@
 
     <!-- Testimonial -->
     <div id="testimonial-container">
-        <div class="testimonial-cards">
-            <div class="testimonial-1">
+        <div class="testimonial-cards" data-flickity='{ "wrapAround": true }'>
+            <div class="testimonial-1 carousel-cell">
                 <img class="testimonial-avatar" src="img/testimonial_kate.jpeg">
                 <h3 class="testimonial-content">"Incredible Work Together"</h3>
                 <h5 class="testimonial-author">Kate Sai</h5>
                 <p class="testimonial-author">My Wife & Data Scientist at NKD</p>
             </div>
-            <div class="testimonial-2">
+            <div class="testimonial-2 carousel-cell">
                 <img class="testimonial-avatar" src="img/testimonial_mashi.jpeg">
                 <h3 class="testimonial-content">"Incredible Work, Man!"</h3>
                 <h5 class="testimonial-author">Ryohei Mashiko</h5>
                 <p class="testimonial-author">Best Man & Co-Student at Treehouse</p>
             </div>
-            <div class="testimonial-3">
+            <div class="testimonial-3 carousel-cell">
                 <img class="testimonial-avatar" src="img/testimonial_mashi.jpeg">
                 <h3 class="testimonial-content">"Incredible Work, Man!"</h3>
                 <h5 class="testimonial-author">Ryohei Mashiko</h5>
@@ -115,10 +115,11 @@
 
     <!-- Abilities -->
     <div id="abilities" class="container pt-4">
-        <h2 class="text-center my-5 text-muted">What are my abilities?</h2>
+        <h2 class="text-center my-4 text-muted">What are my abilities?</h2>
+        <hr class="my-4">
 
         <!-- Skills -->
-        <h3 class="text-center pt-4 pb-4">Skills</h3>
+        <h3 class="text-center pt-3 pb-3">Skills</h3>
         <div class="row">
             <div class="col-md-6">
                 <ul>
@@ -159,16 +160,7 @@
                         </span>
                     </li>
                     <li class="ability">
-                        <span>python</span>
-                        <span class="progress">
-                            <div class="progress-bar progress-bar-striped bg-success progress-bar-animated"
-                                role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
-                                style="width: 90%"></div>
-
-                        </span>
-                    </li>
-                    <li class="ability">
-                        <span>Data Analytics</span>
+                        <span>Sass</span>
                         <span class="progress">
                             <div class="progress-bar progress-bar-striped bg-success progress-bar-animated"
                                 role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
@@ -183,9 +175,9 @@
                     <li class="ability">
                         <span>Wordpress</span>
                         <span class="progress">
-                            <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated"
+                            <div class="progress-bar progress-bar-striped bg-success progress-bar-animated"
                                 role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
-                                style="width: 65%"></div>
+                                style="width: 90%"></div>
 
                         </span>
                     </li>
@@ -195,6 +187,33 @@
                             <div class="progress-bar progress-bar-striped bg-success progress-bar-animated"
                                 role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
                                 style="width: 90%"></div>
+
+                        </span>
+                    </li>
+                    <li class="ability">
+                        <span>Data Visualization</span>
+                        <span class="progress">
+                            <div class="progress-bar progress-bar-striped bg-success progress-bar-animated"
+                                role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+                                style="width: 90%"></div>
+
+                        </span>
+                    </li>
+                    <li class="ability">
+                        <span>Python</span>
+                        <span class="progress">
+                            <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated"
+                                role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+                                style="width: 65%"></div>
+
+                        </span>
+                    </li>
+                    <li class="ability">
+                        <span>Machine Learning</span>
+                        <span class="progress">
+                            <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated"
+                                role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+                                style="width: 65%"></div>
 
                         </span>
                     </li>
@@ -249,7 +268,7 @@
 
         <!-- Potential -->
         <div id="potential" class="col-md-12">
-            <h3 class="text-center pt-4 pb-4">Potential & Passion</h3>
+            <h3 class="text-center pt-4 pb-4">Passion</h3>
             <span class="progress potential-progress">
                 <div class="progress-bar progress-bar-striped bg-danger progress-bar-animated" role="progressbar"
                     aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
@@ -264,39 +283,26 @@
 
     <!-- Project -->
     <div id="projects" class="container-fluid pt-4">
-        <h2 class="text-center my-5 text-muted">It's time to see some projects!</h2>
+        <h2 class="text-center my-4">It's time to see some projects!</h2>
         <div class="container">
             <div class="row">
-                
-                <div class="col-md-6 col-lg-4 project-card">
-                    <div class="hovereffect">
-                        <img src="img/project_1.png" class="img-responsive" alt="...">
-                        <div class="overlay">
-                            <h2>saisai.life</h2>
-                            <p>
-                                This page shows the life of me and my wife by using wordpress.
-                            </p>
-                            <p>
-                                <a href="https://saisai.life/" target="_blank">Live View</a>
-                            </p>
-                            
-                        </div>
-                    </div>
-                </div>
+
                 <div class="col-md-6 col-lg-4 project-card">
                     <div class="hovereffect">
                         <img src="img/project_2.png" class="img-responsive" alt="...">
                         <div class="overlay">
                             <h2>Web Style Guide</h2>
                             <p>
-                                I was converting the CSS into Sass by splitting the code into several Sass partial files.
+                                I was converting the CSS into Sass by splitting the code into several Sass partial
+                                files.
                             </p>
                             <p>
                                 <a href="https://naoto31.github.io/techdegree-project--4/" target="_blank">Live View</a>
                             </p>
                         </div>
                     </div>
-                </div>  <div class="col-md-6 col-lg-4 project-card">
+                </div>
+                <div class="col-md-6 col-lg-4 project-card">
                     <div class="hovereffect">
                         <img src="img/project_3.png" class="img-responsive" alt="...">
                         <div class="overlay">
@@ -309,43 +315,64 @@
                             </p>
                         </div>
                     </div>
-                </div>  <div class="col-md-6 col-lg-4 project-card">
+                </div>
+                <div class="col-md-6 col-lg-4 project-card">
                     <div class="hovereffect">
                         <img src="img/project_4.png" class="img-responsive" alt="...">
                         <div class="overlay">
                             <h2>Game Show App</h2>
                             <p>
-                                In this project, I created a browser version of “Wheel of Success”, a word guessing game.
+                                In this project, I created a browser version of “Wheel of Success”, a word guessing
+                                game.
                             </p>
                             <p>
                                 <a href="https://naoto31.github.io/techdegree-project-6/" target="_blank">Live View</a>
                             </p>
                         </div>
                     </div>
-                </div>  <div class="col-md-6 col-lg-4 project-card">
+                </div>
+                <div class="col-md-6 col-lg-4 project-card">
                     <div class="hovereffect">
                         <img src="img/project_5.png" class="img-responsive" alt="...">
                         <div class="overlay">
                             <h2>WebApp Dashboard</h2>
                             <p>
-                                I built an interactive dashboard for a web application using advanced web techniques including SVG graphics and JavaScript programming.
+                                I built an interactive dashboard for a web application using advanced web techniques
+                                including SVG graphics and JavaScript programming.
                             </p>
                             <p>
                                 <a href="https://naoto31.github.io/techdegree-project-7/" target="_blank">Live View</a>
                             </p>
                         </div>
                     </div>
-                </div>  <div class="col-md-6 col-lg-4 project-card">
+                </div>
+                <div class="col-md-6 col-lg-4 project-card">
                     <div class="hovereffect">
                         <img src="img/project_6.png" class="img-responsive" alt="...">
                         <div class="overlay">
                             <h2>Employee Directory</h2>
                             <p>
-                                Using JavaScript, I created an employee directory by communicating with a third-party API.
+                                Using JavaScript, I created an employee directory by communicating with a third-party
+                                API.
                             </p>
                             <p>
                                 <a href="https://naoto31.github.io/techdegree-project-8/" target="_blank">Live View</a>
                             </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 project-card">
+                    <div class="hovereffect">
+                        <img src="img/project_1.png" class="img-responsive" alt="...">
+                        <div class="overlay">
+                            <h2>saisai.life</h2>
+                            <p>
+                                This page shows the life of me and my wife by using wordpress.
+                            </p>
+                            <p>
+                                <a href="https://saisai.life/" target="_blank">Live View</a>
+                            </p>
+
                         </div>
                     </div>
                 </div>
@@ -357,51 +384,59 @@
     <div id="contact" class="container-fluid alert-dark pt-4">
         <div class="container">
             <h2 class="text-center mt-4 text-muted">Work Together?</h2>
-            <p class="text-white text-center text-muted">Thank you for spending your time on taking a look at my portfolio. I hope to hear from you!</p>
-
-            <div class="col-md-12">
-                <ul class="sns-contact">
-                    <li>
-                        <a href="https://twitter.com/Nao10sai" target="_blank">
-                            <span class="icon icon-twitter"></span></a>
-                    </li>
-
-                    <li>
-                        <a href="https://www.linkedin.com/in/naoto-sai-481428110/" target="_blank">
-                            <span class="icon icon-linkedin"></span></a>
-                    </li>
-
-                </ul>
-            </div>
-                <div class="col-md text-md-right">
-                    <small>&copy; 2020 Naoto Sai</small>
+            <p class="text-center text-muted"><i>- Let us have another adventure together -</i></p>
+            <hr class="my-4">
+            <div class="row text-center">
+                <div class="col-lg-6 order-2">
+                    <h3 class="mb-4"></h3>
+                    <img class="mb-4 img-fluid rounded d-block" src="img/contact_me.jpg" alt="contact-img">
                 </div>
+
+                <div class="col-lg-6 order-1">
+                    <h3 class="mb-4"></h3>
+                    <p>Thank you for spending your time on taking a look at my portfolio. I hope to hear from you!</p>
+                    <ul class="sns-contact">
+                        <li>
+                            <a href="https://twitter.com/Nao10sai" target="_blank">
+                                <span class="icon icon-twitter"></span></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/naoto-sai-481428110/" target="_blank">
+                                <span class="icon icon-linkedin"></span></a>
+                        </li>
+                    </ul>
+                </div>
+                
             </div>
+
+
+    
         </div>
+    </div>
 
-        <!-- /Contact -->
-
-
-
+    <!-- /Contact -->
 
 
 
 
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-        </script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-        </script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
-        </script>
-        <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-        <script src="particles.js"></script>
-        <script src="index.js"></script>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="particles.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>

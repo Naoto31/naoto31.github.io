@@ -109,7 +109,7 @@ h2 {
     background-color: rgb(255, 255, 255, 0.9);
     border-radius: 6px;
     box-shadow: 0px 35px 35px 0px rgba(0, 0, 0, 0.12);
-  }
+}
 
 .flickity-viewport {
     height: 300px;
@@ -177,6 +177,7 @@ ul {
     background-size: cover;
     background-position: center;
     background-image: url(../img/projects_cover.jpg);
+
 }
 
 #projects h2 {
@@ -194,7 +195,6 @@ ul {
     background-color: transparent;
 
 }
-
 
 .overlay {
     padding-right: 20px;
@@ -321,8 +321,6 @@ ul {
     margin-bottom: 0px;
 }
 
-
-
 .sns-contact {
     display: flex;
     justify-content: space-around;
@@ -330,22 +328,40 @@ ul {
 
 }
 
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+/* Twitter */
+.fa-twitter,
+.fa-linkedin,
+.fa-youtube {
+    background: #1f4068;
+    color: white;
+}
+
 #contact .container .col-lg-6 img {
     width: 50%;
     margin: auto;
     border-radius: 115px;
     box-shadow:
-    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-    0 12.5px 10px rgba(0, 0, 0, 0.06),
-    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
-    /* 0 41.8px 33.4px rgba(0, 0, 0, 0.086), */
-    0 100px 80px rgba(0, 0, 0, 0.12)
+        0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+        0 12.5px 10px rgba(0, 0, 0, 0.06),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+        /* 0 41.8px 33.4px rgba(0, 0, 0, 0.086), */
+        0 100px 80px rgba(0, 0, 0, 0.12)
 }
-
-
-
-
 
 /************
 Media Queries 
@@ -363,7 +379,6 @@ Media Queries
         height: 100vh;
     }
 
-    
 
 
 
@@ -371,13 +386,35 @@ Media Queries
 
 @media only screen and (min-width: 1024px) {
 
+    /* .flickity-button,
+    .flickity-page-dots
+     {
+        display: none;
+    }
+
+    .flickity-viewport{
+        overflow: visible;
+
+    }
+
+    .flickity-slider {
+        transform: translateX(0);
+    }
+
     .testimonial-cards {
         position: relative;
         top: -60px;
-    
     }
 
-    .testimonial-1 {
+    .carousel-cell {
+        left: 140px;
+    }
+
+    .flicktity-slider style {
+        transform: translateX(0);
+    } */
+
+    /* .testimonial-1 {
         position: absolute;
         top: 0px;
         left: 140px;
@@ -388,9 +425,9 @@ Media Queries
         border-radius: 6px;
         box-shadow: 0px 35px 35px 0px rgba(0, 0, 0, 0.12);
     }
-    
+
     .testimonial-2 {
-    
+
         position: absolute;
         top: 200px;
         right: 200px;
@@ -401,7 +438,7 @@ Media Queries
         border-radius: 6px;
         box-shadow: 0px 35px 35px 0px rgba(0, 0, 0, 0.12);
     }
-    
+
     .testimonial-3 {
         position: absolute;
         top: 450px;
@@ -412,7 +449,7 @@ Media Queries
         background-color: rgb(255, 255, 255, 0.9);
         border-radius: 6px;
         box-shadow: 0px 35px 35px 0px rgba(0, 0, 0, 0.12);
-    }
+    } */
 
     #testimonial-container {
         text-align: center;
@@ -423,5 +460,5 @@ Media Queries
         background-image: url(../img/testimonial_bg.png);
         /* Image by <a href="https://pixabay.com/users/272447-272447/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1132964">272447</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1132964">Pixabay</a> */
     }
-    
+
 }

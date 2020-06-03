@@ -1,6 +1,7 @@
 /* Core Styles */
 body {
     font-family: 'Rubik', sans-serif;
+
 }
 
 
@@ -79,6 +80,7 @@ h2 {
 /* Testimonial Section*/
 
 #testimonial-container {
+    position: relative;
     text-align: center;
     background-attachment: fixed;
     min-height: 70vh;
@@ -88,36 +90,136 @@ h2 {
     /* Image by <a href="https://pixabay.com/users/272447-272447/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1132964">272447</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1132964">Pixabay</a> */
 }
 
-
-
-.testimonial-avatar {
-    width: 30%;
-    margin-bottom: 20px;
-    border-radius: 50%;
-    text-align: center;
-
+#testimonial-container h3 {
+    font-size: 1.3rem;
 }
 
-.carousel-cell {
+#testimonial-container h5 {
+    font-size: 1rem;
+}
+
+#testimonial-container p {
+    font-size: 0.8rem;
+}
+ 
+
+/*
+.testimonial-1,
+.testimonial-2,
+.testimonial-3 {
+    padding-top: 20px;
+    margin: 15px;
+    width: 40%;
+    height: 250px;
+    background: white;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255, 0.9);
+} */
+
+/* .testi-card {
     margin-top: 20px;
     width: 66%;
     height: 300px;
     margin-right: 10px;
     background: white;
     border-radius: 5px;
-    counter-increment: carousel-cell;
     background-color: rgb(255, 255, 255, 0.9);
     border-radius: 6px;
     box-shadow: 0px 35px 35px 0px rgba(0, 0, 0, 0.12);
-}
+} */
 
-.flickity-viewport {
-    height: 300px;
-}
+.items {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    user-select: none;
+  }
+  
+  .items .item {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    transition: all 300ms ease-in-out;
+    z-index: -1;
+    opacity: 0;
+    border-radius: 10px;;
+    background-color: white;
+  }
+  
+  .item img {
+    margin: 10px 0;
+    width: 40%;
+    height: 40%;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .item.active {
+    opacity: 1;
+    z-index: 99;
+    box-shadow: 0px 0px 105px -35px rgba(0, 0, 0, 0.75);
+  }
+  
+  .item.prev {
+    z-index: 2;
+    opacity: 0.25;
+    transform: translate(-125%, -50%);
+  }
+  
+  .item.next {
+    z-index: 2;
+    opacity: 0.25;
+    transform: translate(25%, -50%);
+  }
+  
+  .items .button-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 275px;
+    z-index: 100;
+  }
+  
+  .button-container .button {
+    color: #fff;
+    font-size: 32px;
+    cursor: pointer;
+    position: relative;
+    opacity: 0.75;
+    transition: all 300ms ease-in-out;
+  }
+  
+  .button-container .button:hover {
+    opacity: 1;
+  }
+  
+  .button-container .button:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 1);
+    border-radius: 50%;
+    z-index: -99;
+  }
+  
+  .button-container .button:nth-child(1) {
+    float: left;
+  }
+  
+  .button-container .button:nth-child(2) {
+    float: right;
+  }
 
-.flickity-page-dots .dot {
-    background: white;
-}
 
 /* cell number */
 
@@ -367,6 +469,14 @@ ul {
 Media Queries 
 *************/
 @media only screen and (min-width: 768px) {
+
+    .testimonial-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+
     #btext {
         position: absolute;
         text-align: center;
@@ -379,44 +489,24 @@ Media Queries
         height: 100vh;
     }
 
-
-
-
 }
 
 @media only screen and (min-width: 1024px) {
 
-    /* .flickity-button,
-    .flickity-page-dots
-     {
+    .testimonial-avatar {
+        width: 30%;
+        margin-bottom: 20px;
+        border-radius: 50%;
+        text-align: center;
+    }
+
+    .button-container {
         display: none;
     }
-
-    .flickity-viewport{
-        overflow: visible;
-
-    }
-
-    .flickity-slider {
-        transform: translateX(0);
-    }
-
-    .testimonial-cards {
-        position: relative;
-        top: -60px;
-    }
-
-    .carousel-cell {
-        left: 140px;
-    }
-
-    .flicktity-slider style {
-        transform: translateX(0);
-    } */
-
-    /* .testimonial-1 {
+    
+    .testimonial-1 {
         position: absolute;
-        top: 0px;
+        top: -20px;
         left: 140px;
         max-width: 340px;
         padding: 40px 30px 40px 30px;
@@ -441,7 +531,7 @@ Media Queries
 
     .testimonial-3 {
         position: absolute;
-        top: 450px;
+        top: 400px;
         left: 140px;
         max-width: 340px;
         padding: 40px 30px 40px 30px;
@@ -449,7 +539,7 @@ Media Queries
         background-color: rgb(255, 255, 255, 0.9);
         border-radius: 6px;
         box-shadow: 0px 35px 35px 0px rgba(0, 0, 0, 0.12);
-    } */
+    }
 
     #testimonial-container {
         text-align: center;

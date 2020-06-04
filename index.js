@@ -64,5 +64,38 @@ const contactImg = document.querySelector('.contact-img img');
 const snsPart = document.getElementsByClassName('sns')[0];
 
 contactImg.addEventListener('click', (e) => {
-    snsPart.style.display ='block';
+    if (snsPart.style.display === 'none'){
+    snsPart.style.display = 'block';
+} else snsPart.style.display = 'none';
 });
+
+// Scroll & FadeIn
+$(document).on('scroll', function () {
+    var pageTop = $(document).scrollTop();
+    var pageBottom = pageTop + $(window).height();
+    var tags = $('section');
+    
+
+    for (let i = 0; i < tags.length; i += 1) {
+        var tag = tags[i];
+
+    if ($(tag).position().top + 100 < pageBottom) {
+        $(tag).addClass('visible');
+    } else {
+        $(tag).removeClass('visible');
+    }
+    }
+
+    var projectContainer = $('#projects');
+    var projectCards = $('.project-card');
+
+    for (let i = 0; i < projectCards.length; i += 1) {
+
+    if ($(projectContainer).position().top + 100 < pageBottom) {
+        $(projectCards[i]).addClass('container-visible');
+    } else {
+        $(projectCards[i]).removeClass('container-visible');
+    }
+}
+});
+

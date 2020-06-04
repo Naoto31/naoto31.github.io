@@ -4,6 +4,9 @@ body {
 
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 /* Nav */
 
@@ -22,7 +25,7 @@ nav {
 #btext {
     position: absolute;
     width: 300px;
-    top: 15%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -31,7 +34,6 @@ nav {
 
 #btext h1 {
     font-size: 1rem;
-    margin-top: 0px;
 }
 
 #btext p {
@@ -40,7 +42,7 @@ nav {
 }
 
 #particles-js {
-    margin-top: 16px;
+    padding-top: 0px;
     background-image: url("../img/particles_1.png");
     background-size: cover;
     background-position: center center;
@@ -103,38 +105,15 @@ h2 {
 #testimonial-container p {
     font-size: 0.8rem;
 }
- 
 
-/*
-.testimonial-1,
-.testimonial-2,
-.testimonial-3 {
-    padding-top: 20px;
-    margin: 15px;
-    width: 40%;
-    height: 250px;
-    background: white;
-    border-radius: 5px;
-    background-color: rgb(255, 255, 255, 0.9);
-} */
-
-/* .testi-card {
-    margin-top: 20px;
-    width: 66%;
-    height: 300px;
-    margin-right: 10px;
-    background: white;
-    border-radius: 5px;
-    background-color: rgb(255, 255, 255, 0.9);
-    border-radius: 6px;
-    box-shadow: 0px 35px 35px 0px rgba(0, 0, 0, 0.12);
-} */
+.testi-card {
+    padding: 30px;
+}
 
 .items {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     user-select: none;
   }
   
@@ -170,13 +149,12 @@ h2 {
   .item.prev {
     z-index: 2;
     opacity: 0.25;
-    transform: translate(-125%, -50%);
+    
   }
   
   .item.next {
     z-index: 2;
     opacity: 0.25;
-    transform: translate(25%, -50%);
   }
   
   .items .button-container {
@@ -274,7 +252,7 @@ ul {
 /* Project Section */
 
 #projects {
-    padding-bottom: 40px;
+    padding: 60px 0;
     text-align: center;
     background-attachment: fixed;
     background-size: cover;
@@ -284,7 +262,7 @@ ul {
 }
 
 #projects h2 {
-    padding: 40px 0;
+    padding: 0;
     color: white;
 }
 
@@ -416,6 +394,7 @@ ul {
 
 
 /* Contact Section */
+
 #contact {
     background-color: white;
     padding-bottom: 100px;
@@ -426,8 +405,16 @@ ul {
 }
 
 .sns {
+    animation: fadeIn ease-in 2s;
+    display: none;
     text-align: center;
     width: 100%;
+}
+
+.sns p {
+    padding: 10px 0;
+    font-size: 1rem;
+    font-family: 'Bree Serif', serif;
 }
 
 .sns-contact {
@@ -459,6 +446,10 @@ ul {
     color: white;
 }
 
+#contact .container hr {
+    padding-bottom: 20px;
+}
+
 #contact .container .contact-img img {
     width: 30%;
     margin: auto;
@@ -469,8 +460,24 @@ ul {
         0 12.5px 10px rgba(0, 0, 0, 0.06),
         0 22.3px 17.9px rgba(0, 0, 0, 0.072),
         /* 0 41.8px 33.4px rgba(0, 0, 0, 0.086), */
-        0 100px 80px rgba(0, 0, 0, 0.12)
+        0 100px 80px rgba(0, 0, 0, 0.12);
+    animation: fluffy1 3s ease infinite;
 }
+
+#contact .container .contact-img img:hover {
+    cursor: pointer;
+}
+
+@keyframes fluffy1 {
+    0% { transform:translateY(0) }
+    5% { transform:translateY(0) }
+    10% { transform:translateY(0) }
+    20% { transform:translateY(-15px) }
+    25% { transform:translateY(0) }
+    30% { transform:translateY(-15px) }
+    50% { transform:translateY(0) }
+    100% { transform:translateY(0) }
+  }
 
 /************
 Media Queries 
@@ -504,6 +511,14 @@ Media Queries
 
     #particles-js {
         height: 100vh;
+    }
+
+    .item.prev {
+        transform: translate(25%, -50%);
+    }
+
+    .item.next {
+        transform: translate(-124%, -50%);
     }
 
 }
@@ -540,52 +555,71 @@ Media Queries
     .button-container {
         display: none;
     }
-    
-    .testimonial-1 {
-        position: absolute;
-        top: -20px;
-        left: 140px;
-        max-width: 340px;
-        padding: 40px 30px 40px 30px;
+
+    .testi-card {
+        padding: 50px 30px;
         vertical-align: top;
         background-color: rgb(255, 255, 255, 0.9);
         border-radius: 6px;
         box-shadow: 0px 35px 35px 0px rgba(0, 0, 0, 0.12);
+    }
+    
+    .testimonial-1 {
+        position: absolute;
+        top: -17%;
+        left: 11%;
+        max-width: 340px;
+        
     }
 
     .testimonial-2 {
 
         position: absolute;
-        top: 200px;
-        right: 200px;
+        top: -5%;
+        right: 13.5%;
         max-width: 340px;
-        padding: 40px 30px 40px 30px;
-        vertical-align: top;
-        background-color: rgb(255, 255, 255, 0.9);
-        border-radius: 6px;
-        box-shadow: 0px 35px 35px 0px rgba(0, 0, 0, 0.12);
+        
     }
 
     .testimonial-3 {
         position: absolute;
-        top: 400px;
-        left: 140px;
+        top: 43%;
+        left: 11%;
         max-width: 340px;
-        padding: 40px 30px 40px 30px;
-        vertical-align: top;
-        background-color: rgb(255, 255, 255, 0.9);
-        border-radius: 6px;
-        box-shadow: 0px 35px 35px 0px rgba(0, 0, 0, 0.12);
+       
+    }
+
+    .testimonial-4 {
+        position: absolute;
+        top: 55%;
+        right: 13.5%;
+        max-width: 340px;
+    
     }
 
     #testimonial-container {
         text-align: center;
         background-attachment: fixed;
-        min-height: 100vh;
+        height: auto;
         background-size: cover;
         background-position: center;
         background-image: url(../img/testimonial_bg.png);
         /* Image by <a href="https://pixabay.com/users/272447-272447/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1132964">272447</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1132964">Pixabay</a> */
     }
+
+    .sns-contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    
+    }
+
+    .sns-contact .fa {
+        margin: 0 30px;
+    
+    }
+    
 
 }

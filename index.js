@@ -1,11 +1,11 @@
-// I will be creating a different pen with touch support but right // now I have no time for it due to school
+// Testimonial Cards (Thanks to https://codepen.io/YousifW/pen/LKBxZX)
 
 const slider = document.querySelector(".items");
 const slides = document.querySelectorAll(".item");
 const button = document.querySelectorAll(".button");
 
 let current = 0;
-let prev = 4;
+let prev = 3;
 let next = 1;
 
 for (let i = 0; i < button.length; i++) {
@@ -14,7 +14,7 @@ for (let i = 0; i < button.length; i++) {
 
 const gotoPrev = () => current > 0 ? gotoNum(current - 1) : gotoNum(slides.length - 1);
 
-const gotoNext = () => current < 4 ? gotoNum(current + 1) : gotoNum(0);
+const gotoNext = () => current < 3 ? gotoNum(current + 1) : gotoNum(0);
 
 const gotoNum = number => {
     current = number;
@@ -27,12 +27,12 @@ const gotoNum = number => {
         slides[i].classList.remove("next");
     }
 
-    if (next == 5) {
+    if (next == 4) {
         next = 0;
     }
 
     if (prev == -1) {
-        prev = 4;
+        prev = 3;
     }
 
     slides[current].classList.add("active");
@@ -40,17 +40,7 @@ const gotoNum = number => {
     slides[next].classList.add("next");
 }
 
-console.log(slider);
-
-// if ($(window).width() > 1024) {
-//     slider.classList.remove('items');
-// }
-
-// if ($(window).width() <= 1024) {
-//     slider.classList.add('items');
-// }
-
-
+// Change testimonial cards depending on a screen size
 jQuery(document).ready(function ($) {
     var alterClass = function () {
         var ww = document.body.clientWidth;
@@ -67,4 +57,12 @@ jQuery(document).ready(function ($) {
     });
     //Fire it when the page first loads:
     alterClass();
+});
+
+// Shows SNS part by clicking the picture
+const contactImg = document.querySelector('.contact-img img');
+const snsPart = document.getElementsByClassName('sns')[0];
+
+contactImg.addEventListener('click', (e) => {
+    snsPart.style.display ='block';
 });

@@ -21,7 +21,7 @@
 
 </head>
 
-<body id="home" data-spy="scroll" data-target=".navbar" data-offset="100">
+<body id="home" data-spy="scroll" data-target=".navbar" data-offset="50">
     <!-- nav bar -->
 
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
@@ -31,7 +31,7 @@
                 aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="#home">
                 <img src="/docs/4.1/assets/brand/bootstrap-solid.svg" width="30" height=""
                     class="d-inline-block align-top" alt="">Naoto Sai</a>
         
@@ -44,13 +44,13 @@
                         <a class="nav-link" href="#profile">Profile</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" href="#ability">Ability</a>
+                        <a class="nav-link" href="#abilities">Ability</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" href="#project">Project</a>
+                        <a class="nav-link" href="#projects">Project</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" href="#contact">Contact</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
             
@@ -71,10 +71,10 @@
 
 
 
-    <div class="container pt-4 pb-4">
+    <div class="container">
         <!-- Profile -->
-        <div id="profile fade-in">
-            <h2 class="text-center my-4 text-muted">Greetings from Munich!</h2>
+        <div id="profile" class="fade-in">
+            <h2 class="text-center text-muted">Greetings from Munich!</h2>
             <p class="text-center text-muted"><i>- Life is an adventure -</i></p>
             <hr class="my-4">
             <div class="row text-center">
@@ -143,7 +143,7 @@
     <!-- /Testimonial -->
 
     <!-- Abilities -->
-    <div id="abilities" class="container pt-4">
+    <div id="abilities" class="container">
         <h2 class="text-center my-4 text-muted">What are my abilities?</h2>
         <hr class="my-4">
 
@@ -415,14 +415,13 @@
             <h2 class="text-center mt-4 text-muted">Work Together?</h2>
             <p class="text-center text-muted"><i>- Let us have another adventure together -</i></p>
             <hr class="my-4">
-            <div class="row text-center">
-                <div class="col-lg-6 order-2">
-                    <h3 class="mb-4"></h3>
-                    <img class="mb-4 img-fluid rounded d-block" src="img/contact_me.jpg" alt="contact-img">
+
+            <div class=" text-center">
+                <div class="contact-img">
+                    <img class="mb-4" src="img/contact_me.jpg" alt="contact-img">
                 </div>
 
-                <div class="col-lg-6 order-1">
-                    <h3 class="mb-4"></h3>
+                <div class="sns">
                     <p>Thank you for spending your time on taking a look at my portfolio. I hope to hear from you!</p>
                     <ul class="sns-contact">
                         <li>

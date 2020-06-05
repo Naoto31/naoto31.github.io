@@ -430,6 +430,10 @@ ul {
 
 }
 
+.sns-icon {
+    padding: 20px;
+}
+
 .fa {
     padding: 20px;
     font-size: 30px;
@@ -467,6 +471,12 @@ ul {
 
 #contact .container .contact-img img:hover {
     cursor: pointer;
+}
+
+.click-icon {
+    width: 30px; 
+    height: 30px;
+    bottom: 0;
 }
 
 @keyframes fluffy1 {
@@ -671,7 +681,7 @@ Media Queries
 
     .project-card {
         transform: translateX(150%);
-        transition: all 1.5s;
+        transition: all ease-in-out 1.5s;
     }
 
     .project-card.container-visible {

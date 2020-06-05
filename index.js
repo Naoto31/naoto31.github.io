@@ -64,7 +64,7 @@ const contactImg = document.querySelector('.contact-img img');
 const snsPart = document.getElementsByClassName('sns')[0];
 
 contactImg.addEventListener('click', (e) => {
-    if (snsPart.style.display === 'none'){
+    if (snsPart.style.display === 'none' || snsPart.style.display === ''){
     snsPart.style.display = 'block';
 } else snsPart.style.display = 'none';
 });

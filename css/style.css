@@ -257,7 +257,7 @@ ul {
 
 #projects h2 {
     padding: 0;
-    color: white;
+    color: #1f4068;
 }
 
 .hovereffect h2 {
@@ -465,10 +465,11 @@ ul {
 
 #contact .container .contact-img img {
     width: 50%;
+    height: 50%;
     margin: auto;
+    border-radius: 50%;
     animation: fluffy1 3s ease infinite;
     box-shadow: 0px 0px 105px -35px rgba(0, 0, 0, 0.75);
-    border-radius: 50%;
 }
 
 #contact .container .contact-img img:hover {

@@ -464,12 +464,11 @@ ul {
 }
 
 #contact .container .contact-img img {
-    width: 50%;
-    height: 50%;
+    width: 60%;
     margin: auto;
-    border-radius: 50%;
     animation: fluffy1 3s ease infinite;
     box-shadow: 0px 0px 105px -35px rgba(0, 0, 0, 0.75);
+    border-radius: 50%;
 }
 
 #contact .container .contact-img img:hover {
@@ -529,6 +528,10 @@ Media Queries
         font-size: 2rem;
     }
 
+    #profile img {
+        width: 30%;
+    }
+
 
     .testimonial-cards {
         display: flex;
@@ -583,7 +586,7 @@ Media Queries
     }
 
     #contact .container .contact-img img {
-        width: 30%;
+        width: 50%;
     }
 
 }
@@ -608,6 +611,10 @@ Media Queries
         left: 30%;
         text-align: center;
         color: white;
+    }
+
+    #profile img {
+        width: 50%;
     }
 
     .testimonial-avatar {

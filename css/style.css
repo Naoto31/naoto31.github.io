@@ -88,17 +88,19 @@ h2 {
     /* Image by <a href="https://pixabay.com/users/272447-272447/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1132964">272447</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1132964">Pixabay</a> */
 }
 
-
 #testimonial-container h3 {
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 
 #testimonial-container h5 {
-    font-size: 1rem;
+    padding: 5px 0;
+    font-size: 0.8rem;
+    color: #ccc;
 }
 
 #testimonial-container p {
     font-size: 0.8rem;
+    font-weight: bold;
 }
 
 .items {
@@ -113,14 +115,14 @@ h2 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 250px;
-    height: 250px;
+    padding: 10px 10px;
+    width: 300px;
+    height: 320px;
     overflow: hidden;
     transition: all 300ms ease-in-out;
     z-index: -1;
     opacity: 0;
     border-radius: 10px;
-    ;
     background-color: white;
 }
 
@@ -153,7 +155,7 @@ h2 {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -150%);
     width: 275px;
     z-index: 100;
 }
@@ -538,10 +540,26 @@ Media Queries
         width: 40%;
         height: 40%;
         border-radius: 50%;
-        object-fit: cover;
+    }
+
+    .items .item {
+        width: 350px;
+        height: 350px;
+
+    }
+
+    #testimonial-container h3 {
+        font-size: 1.1rem;
     }
     
-
+    #testimonial-container h5 {
+        font-size: 0.9rem;
+    }
+    
+    #testimonial-container p {
+        font-size: 0.9rem;
+    }
+    
     #btext {
         width: 700px;
         position: absolute;
@@ -602,8 +620,13 @@ Media Queries
         display: none;
     }
 
+    #testimonial-container {
+        min-height: 80vh;
+    }
+
     .testi-card {
-        padding: 50px 30px;
+        padding: 50px 20px;
+        height: 350px;
         vertical-align: top;
         background-color: rgb(255, 255, 255, 0.9);
         border-radius: 6px;
@@ -620,6 +643,19 @@ Media Queries
     section.visible {
         opacity: 1;
         transform: translateY(0);
+    }
+
+
+    #testimonial-container h3 {
+        font-size: 1.2rem;
+    }
+    
+    #testimonial-container h5 {
+        font-size: 1rem;
+    }
+    
+    #testimonial-container p {
+        font-size: 1rem;
     }
 
     .testimonial-1 {
@@ -680,11 +716,13 @@ Media Queries
     }
 
     .project-card {
+        opacity: 0;
         transform: translateX(150%);
         transition: all ease-in-out 1.5s;
     }
 
     .project-card.container-visible {
+        opacity: 1;
         transform: translateX(0);
 
     }

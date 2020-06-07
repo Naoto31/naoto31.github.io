@@ -19,6 +19,7 @@ nav {
     background-color: #1f4068;
 }
 
+
 /* Particles */
 
 #btext {
@@ -49,6 +50,7 @@ nav {
     height: 60vh;
 }
 
+
 /* Profile Section */
 
 .fade-in {
@@ -72,8 +74,9 @@ h2 {
 }
 
 #profile p {
-    margin-top: 20px 0 0 0;
+    margin-top: 20px;
 }
+
 
 /* Testimonial Section*/
 
@@ -199,9 +202,6 @@ h2 {
     float: right;
 }
 
-
-/* cell number */
-
 .card-header {
     padding: 3px;
 }
@@ -247,6 +247,7 @@ ul {
 #abilities h3 {
     font-size: 1.2rem;
 }
+
 
 /* Project Section */
 
@@ -447,18 +448,15 @@ ul {
     text-align: center;
     text-decoration: none;
     border-radius: 10px;
-    ;
 }
 
-/* Add a hover effect if you want */
 .fa:hover {
     opacity: 0.7;
 }
 
-/* Set a specific color for each brand */
-/* Twitter */
 .fa-twitter,
 .fa-linkedin,
+.fa-github,
 .fa-youtube {
     background: #1f4068;
     color: white;
@@ -485,6 +483,31 @@ ul {
     width: 30px; 
     height: 30px;
     bottom: 0;
+}
+
+.social-icon {
+    position: absolute;
+    z-index: 2;
+    top: 19px;
+    left: 19px;
+    width: 26px;
+    height: auto;
+    margin: 5px 0;
+    align-items: center;
+}
+
+.icon-background {
+    position: relative;
+    z-index: 1;
+    width: 65.72px;
+    height: 70px;
+    background-color: #1f4068;
+    border-radius: 10px;
+}
+
+.icon-background:hover {
+    opacity: 0.7;
+    cursor: pointer;
 }
 
 @keyframes fluffy1 {
@@ -538,6 +561,18 @@ Media Queries
         width: 30%;
     }
 
+    #btext {
+        width: 700px;
+        position: absolute;
+        text-align: center;
+        top: 55%;
+        right: 15%;
+        color: white;
+    }
+
+    #particles-js {
+        height: 100vh;
+    }
 
     .testimonial-cards {
         display: flex;
@@ -570,19 +605,6 @@ Media Queries
         font-size: 0.9rem;
     }
     
-    #btext {
-        width: 700px;
-        position: absolute;
-        text-align: center;
-        top: 55%;
-        right: 15%;
-        color: white;
-    }
-
-    #particles-js {
-        height: 100vh;
-    }
-
     .item.prev {
         transform: translate(25%, -50%);
     }
@@ -648,7 +670,6 @@ Media Queries
         border-radius: 6px;
         box-shadow: 0px 35px 35px 0px rgba(0, 0, 0, 0.12);
     }
-
 
     section {
         opacity: 0; 
@@ -726,29 +747,24 @@ Media Queries
 
     }
 
-    .sns-contact .fa {
+    .sns-contact li {
         margin: 0 30px;
 
     }
 
     .project-card {
-        opacity: 0;
-        transform: translateX(150%);
-        transition: all ease-in-out 1.5s;
+        transform: translateY(150%);
+        transition: all ease-in-out 1s;
     }
 
     .project-card.container-visible {
-        opacity: 1;
         transform: translateX(0);
 
     }
-
 
     #contact .container .contact-img img {
         width: 30%;
         max-width: 280px;
     }
-
-
 
 }

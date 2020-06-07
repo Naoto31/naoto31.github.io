@@ -103,6 +103,10 @@ h2 {
     font-weight: bold;
 }
 
+.testimonial-author a {
+    color: #5FBB47;
+}
+
 .items {
     position: absolute;
     top: 50%;

@@ -93,7 +93,8 @@ h2 {
 }
 
 #testimonial-container h5 {
-    padding: 5px 0;
+    padding: 5px 0 3px 0;
+    margin: 0;
     font-size: 0.8rem;
     color: #ccc;
 }

@@ -260,7 +260,7 @@ ul {
 
 }
 
-#projects h2 {
+.project-title {
     padding: 0;
     color: #1f4068;
 }
@@ -641,6 +641,7 @@ Media Queries
 
     .testi-card {
         padding: 30px 20px;
+        min-width: 340px;
         height: 350px;
         vertical-align: top;
         background-color: rgb(255, 255, 255, 0.9);

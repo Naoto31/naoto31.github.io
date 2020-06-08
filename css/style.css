@@ -43,12 +43,12 @@ nav {
 
 #particles-js {
     padding-top: 0px;
-    background-image: url("../img/particles_1.png");
-    background-size: 100% auto;
+    background-image: url("../img/particle_mobile.png");
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
-    height: 120vh;
+    height: 90vh;
 }
 
 
@@ -574,6 +574,7 @@ Media Queries
     }
 
     #particles-js {
+        background-image: url("../img/particles_1.png");
         height: 100vh;
     }
 

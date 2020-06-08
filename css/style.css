@@ -43,7 +43,7 @@ nav {
 
 #particles-js {
     padding-top: 0px;
-    background-image: url("../img/particle_mobile.png");
+    background-image: url("../img/particles_1.png");
     background-size: cover;
     background-position: center center;
     height: 90vh;
@@ -253,7 +253,6 @@ ul {
 #projects {
     padding: 60px 0;
     text-align: center;
-    background-attachment: fixed;
     background-size: cover;
     background-position: center;
     background-image: url(../img/projects_cover.png);
@@ -577,6 +576,10 @@ Media Queries
         height: 100vh;
     }
 
+    #testimonial-container {
+        background-attachment: fixed;
+    }
+
     .testimonial-cards {
         display: flex;
         flex-wrap: wrap;
@@ -614,6 +617,10 @@ Media Queries
 
     .item.next {
         transform: translate(-124%, -50%);
+    }
+
+    #projects {
+        background-attachment: fixed;
     }
 
     #contact .container .contact-img img {

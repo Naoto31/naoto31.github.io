@@ -46,7 +46,6 @@ nav {
     background-image: url("../img/particle_mobile.png");
     background-size: cover;
     background-position: center center;
-    background-attachment: scroll;
     height: 90vh;
 }
 

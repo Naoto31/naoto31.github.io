@@ -133,7 +133,7 @@ h2 {
 }
 
 .item img {
-    margin: 30px 0;
+    margin: 25px 0;
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -598,7 +598,7 @@ Media Queries
     }
 
     #testimonial-container h3 {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
     
     #testimonial-container h5 {
@@ -671,7 +671,7 @@ Media Queries
 
     .testi-card {
         padding: 30px 20px;
-        min-width: 340px;
+        min-width: 350px;
         height: 350px;
         vertical-align: top;
         background-color: rgb(255, 255, 255, 0.9);
@@ -692,7 +692,7 @@ Media Queries
 
 
     #testimonial-container h3 {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
     
     #testimonial-container h5 {
